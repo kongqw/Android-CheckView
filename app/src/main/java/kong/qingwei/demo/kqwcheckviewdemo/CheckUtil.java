@@ -8,11 +8,11 @@ public class CheckUtil {
 
 
     /**
-     * Ëæ»ú²úÉú»®ÏßµÄÆğÊ¼µã×ø±êºÍ½áÊøµã×ø±ê
+     * éšæœºäº§ç”Ÿåˆ’çº¿çš„èµ·å§‹ç‚¹åæ ‡å’Œç»“æŸç‚¹åæ ‡
      *
-     * @param height ´«ÈëCheckViewµÄ¸ß¶ÈÖµ
-     * @param width  ´«ÈëCheckViewµÄ¿í¶ÈÖµ
-     * @return ÆğÊ¼µã×ø±êºÍ½áÊøµã×ø±ê
+     * @param height ä¼ å…¥CheckViewçš„é«˜åº¦å€¼
+     * @param width  ä¼ å…¥CheckViewçš„å®½åº¦å€¼
+     * @return èµ·å§‹ç‚¹åæ ‡å’Œç»“æŸç‚¹åæ ‡
      */
     public static int[] getLine(int height, int width) {
         int[] tempCheckNum = {0, 0, 0, 0};
@@ -25,10 +25,10 @@ public class CheckUtil {
 
 
     /**
-     * Ëæ»ú²úÉúµãµÄÔ²ĞÄµã×ø±ê
+     * éšæœºäº§ç”Ÿç‚¹çš„åœ†å¿ƒç‚¹åæ ‡
      *
-     * @param height ´«ÈëCheckViewµÄ¸ß¶ÈÖµ
-     * @param width  ´«ÈëCheckViewµÄ¿í¶ÈÖµ
+     * @param height ä¼ å…¥CheckViewçš„é«˜åº¦å€¼
+     * @param width  ä¼ å…¥CheckViewçš„å®½åº¦å€¼
      * @return
      */
     public static int[] getPoint(int height, int width) {
@@ -40,10 +40,10 @@ public class CheckUtil {
 
 
     /**
-     * ÑéÖ¤ÊÇ·ñÕıÈ·
+     * éªŒè¯æ˜¯å¦æ­£ç¡®
      *
-     * @param userCheck ÓÃ»§ÊäÈëµÄÑéÖ¤Âë
-     * @param checkNum  ÑéÖ¤¿Ø¼ş²úÉúµÄËæ»úÊı
+     * @param userCheck ç”¨æˆ·è¾“å…¥çš„éªŒè¯ç 
+     * @param checkNum  éªŒè¯æ§ä»¶äº§ç”Ÿçš„éšæœºæ•°
      * @return
      */
     public static boolean checkNum(String userCheck, int[] checkNum) {

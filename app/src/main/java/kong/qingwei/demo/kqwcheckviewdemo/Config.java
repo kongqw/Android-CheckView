@@ -4,20 +4,20 @@ import android.graphics.Color;
 
 /**
  * Created by kongqw on 2015/10/23.
- * ¹¦ÄÜ£ºÓÃÓÚ¶ÔÑéÖ¤Âë¿Ø¼ş²ÎÊıµÄÅäÖÃ
+ * åŠŸèƒ½ï¼šç”¨äºå¯¹éªŒè¯ç æ§ä»¶å‚æ•°çš„é…ç½®
  */
 public class Config {
-    // ÑéÖ¤Âë¸üĞÂÊ±¼äen ,
+    // éªŒè¯ç æ›´æ–°æ—¶é—´en ,
     public static final int PTEDE_TIME = 1200;
-    // µãÊıÉèÖÃ
+    // ç‚¹æ•°è®¾ç½®
     public static final int POINT_NUM = 10000;
-    // Ïß¶ÎÊıÉèÖÃ
+    // çº¿æ®µæ•°è®¾ç½®
     public static final int LINE_NUM = 20;
-    // ÉèÖÃ±³¾°ÑÕÉ«
+    // è®¾ç½®èƒŒæ™¯é¢œè‰²
     public static final int COLOR = Color.BLUE;
-    // Ëæ»úÊı¾İ³¤¶È
+    // éšæœºæ•°æ®é•¿åº¦
     public static int TEXT_LENGTH = 4;
-    // ÉèÖÃÑéÖ¤Âë×ÖÌå´óĞ¡
+    // è®¾ç½®éªŒè¯ç å­—ä½“å¤§å°
     public static int TEXT_SIZE = 100;
 
 

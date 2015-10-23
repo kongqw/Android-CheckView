@@ -22,7 +22,7 @@ public class CheckView extends View {
     private final int mTextColor;
     private final int mBgColor;
 
-    // ÑéÖ¤Âë
+    // éªŒè¯ç 
     public CheckView(Context context, AttributeSet attrs) {
         super(context, attrs);
         mContext = context;
@@ -32,21 +32,21 @@ public class CheckView extends View {
 
 
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.CheckView);
-        // »ñÈ¡Ëæ»úµãµÄ¸öÊı
+        // è·å–éšæœºç‚¹çš„ä¸ªæ•°
         mPointNum = a.getInteger(R.styleable.CheckView_point_num, 100);
-        // »ñÈ¡Ëæ»úÏßµÄÌõÊı
+        // è·å–éšæœºçº¿çš„æ¡æ•°
         mLineNum = a.getInteger(R.styleable.CheckView_line_num, 10);
-        // »ñÈ¡ÑéÖ¤Âë³¤¶È
+        // è·å–éªŒè¯ç é•¿åº¦
         mTextLength = a.getInteger(R.styleable.CheckView_text_length, 4);
-        // »ñÈ¡ÑéÖ¤Âë×ÖÌå´óĞ¡
+        // è·å–éªŒè¯ç å­—ä½“å¤§å°
         mTextSize = a.getDimension(R.styleable.CheckView_text_size, 30);
-        // »ñÈ¡ÑéÖ¤Âë×ÖÌåÑÕÉ«
+        // è·å–éªŒè¯ç å­—ä½“é¢œè‰²
         mTextColor = a.getColor(R.styleable.CheckView_text_color, 0XFFFFFFFF);
-        // »ñÈ¡±³¾°ÑÕÉ«
+        // è·å–èƒŒæ™¯é¢œè‰²
         mBgColor = a.getColor(R.styleable.CheckView_bg_color, 0XFFFFFFFF);
 
 
-        // »ñÈ¡ÑéÖ¤ÂëÀàĞÍ£¨´¿Êı×Ö/´¿×ÖÄ¸/»ìºÏ£©
+        // è·å–éªŒè¯ç ç±»å‹ï¼ˆçº¯æ•°å­—/çº¯å­—æ¯/æ··åˆï¼‰
         Log.d("CheckView", "point_num = " + mPointNum);
         Log.d("CheckView", "line_num = " + mLineNum);
         Log.d("CheckView", "text_length = " + mTextLength);
@@ -64,25 +64,25 @@ public class CheckView extends View {
 
         canvas.drawColor(mBgColor);
         final int height = getHeight();
-        // »ñµÃCheckView¿Ø¼şµÄ¸ß¶È
+        // è·å¾—CheckViewæ§ä»¶çš„é«˜åº¦
         final int width = getWidth();
-        // »ñµÃCheckView¿Ø¼şµÄ¿í¶È
+        // è·å¾—CheckViewæ§ä»¶çš„å®½åº¦
         int dx = width / mTextLength / 2;
         for (int i = 0; i < mTextLength; i++) {
-            // »æÖÆÑéÖ¤¿Ø¼şÉÏµÄÎÄ±¾
+            // ç»˜åˆ¶éªŒè¯æ§ä»¶ä¸Šçš„æ–‡æœ¬
             canvas.drawText("" + CheckNum[i], dx, getPositon(height), mTempPaint);
             dx += width / (mTextLength + 1);
         }
         int[] line;
         for (int i = 0; i < Config.LINE_NUM; i++) {
-            // »®Ïß
+            // åˆ’çº¿
             line = CheckUtil.getLine(height, width);
             canvas.drawLine(line[0], line[1], line[2], line[3], mTempPaint);
         }
-        // »æÖÆĞ¡Ô²µã
+        // ç»˜åˆ¶å°åœ†ç‚¹
         int[] point;
         for (int i = 0; i < Config.POINT_NUM; i++) {
-            // »­µã
+            // ç”»ç‚¹
             point = CheckUtil.getPoint(height, width);
             canvas.drawCircle(point[0], point[1], 1, mTempPaint);
         }
@@ -93,7 +93,7 @@ public class CheckView extends View {
     }
 
     /**
-     * ²úÉúËæ»úÊı×Ö
+     * äº§ç”Ÿéšæœºæ•°å­—
      *
      * @return
      */
@@ -108,9 +108,9 @@ public class CheckView extends View {
 
 
     /**
-     * ¼ÆËãÑéÖ¤ÂëµÄ»æÖÆyµãÎ»ÖÃ
+     * è®¡ç®—éªŒè¯ç çš„ç»˜åˆ¶yç‚¹ä½ç½®
      *
-     * @param height ´«ÈëCheckViewµÄ¸ß¶ÈÖµ
+     * @param height ä¼ å…¥CheckViewçš„é«˜åº¦å€¼
      * @return
      */
     public int getPositon(int height) {
