@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:kongqw="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/checkpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <kong.qingwei.demo.kqwcheckviewdemo.CheckView
+        android:id="@+id/checkView"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        kongqw:bg_color="#FFFFFF00"
+        kongqw:line_num="20"
+        kongqw:point_num="1000"
+        kongqw:text_color="#FF00FFFF"
+        kongqw:text_length="6"
+        kongqw:text_size="25dp" />
+
+    <EditText
+        android:id="@+id/checkTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请出入验证码" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="验证" />
+
+    <Button
+        android:id="@+id/ref"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="换一张" />
+
+</LinearLayout>
