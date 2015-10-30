@@ -2,9 +2,6 @@
 ##效果图
 ![P1](http://img.blog.csdn.net/20151030184952477)
 
-##Github地址
-[地址：https://github.com/kongqw/Android-CheckView](https://github.com/kongqw/Android-CheckView)
-
 ##使用
 
 ```
