@@ -4,21 +4,16 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/checkpass"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
     <kong.qingwei.demo.kqwcheckviewdemo.CheckView
         android:id="@+id/checkView"
         android:layout_width="200dp"
         android:layout_height="50dp"
         kongqw:bg_color="#FFFFFF00"
-        kongqw:line_num="20"
-        kongqw:point_num="1000"
+        kongqw:line_num="10"
+        kongqw:point_num="100"
         kongqw:text_color="#FF00FFFF"
         kongqw:text_length="6"
-        kongqw:text_size="25dp" />
+        kongqw:text_size="30dp" />
 
     <EditText
         android:id="@+id/checkTest"
