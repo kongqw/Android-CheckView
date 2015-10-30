@@ -2,6 +2,53 @@
 ##效果图
 ![P1](http://img.blog.csdn.net/20151030184952477)
 
+##Github地址
+[地址：https://github.com/kongqw/Android-CheckView](https://github.com/kongqw/Android-CheckView)
+
+##使用
+
+```
+<kong.qingwei.demo.kqwcheckviewdemo.CheckView
+        android:id="@+id/checkView"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        kongqw:bg_color="#FFFFFF00"
+        kongqw:line_num="10"
+        kongqw:point_num="100"
+        kongqw:text_length="6"
+        kongqw:text_size="30dp" />
+```
+
+###设置验证码宽度
+```
+android:layout_width="200dp"
+```
+###设置验证码高度
+```
+android:layout_height="50dp"
+```
+###设置验证码背景颜色
+```
+kongqw:bg_color="#FFFFFF00"
+```
+###设置验证码线的条数
+```
+kongqw:line_num="10"
+```
+###设置验证码点的个数
+```
+kongqw:point_num="100"
+```
+###设置验证码长度
+```
+kongqw:text_length="6"
+```
+###设置验证码字符大小
+```
+kongqw:text_size="30dp"
+```
+
+
 ##验证码的类
 
 ```
@@ -243,7 +290,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
         kongqw:bg_color="#FFFFFF00"
         kongqw:line_num="10"
         kongqw:point_num="100"
-        kongqw:text_color="#FF00FFFF"
         kongqw:text_length="6"
         kongqw:text_size="30dp" />
 
